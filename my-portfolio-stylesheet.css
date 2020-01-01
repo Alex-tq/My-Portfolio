@@ -18,6 +18,7 @@ body{
   justify-content:center;
   align-items:center;
   min-height:100vh;
+  
 }
 #about p{
   max-width:500px;
@@ -29,8 +30,12 @@ body{
 
 #about-row{
   text-align:center;
-  max-width:500px;
+  max-width:650px;
 }
+#about-row li{
+  text-align:left;
+}
+
 #about-pcontainer{
   display:flex;
   flex-direction:column;
@@ -61,7 +66,7 @@ p{
   list-style-type: none;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .lilogos {
