@@ -100,7 +100,15 @@ nav a:hover{
   padding-top: 55px;
   margin-left: 5px;
   margin-right: 5px;
+  min-height: 100vh;
 }
+.Skills, .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer {
   right: 0;
   margin-bottom:0px;
