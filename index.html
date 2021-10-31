@@ -231,12 +231,31 @@
     <!--The Skills section ends-->
     <!--The Contact section begins-->
     <div class="contact container-fluid" id="contact">
-    <h2 class="text-center">contact me</h2>
+    <h2 class="text-center">Contact</h2>
     <div class="row">
       
       <div class="col-md-6">
         <div>
-          <p>For offers or additional information please feel free to send me an email at: <b>alextq3036@gmail.com</b> </p>  
+          <div class="container">
+            <form target="_blank" action="https://formsubmit.co/alextq3036@gmail.com" method="POST">
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                  </div>
+                  <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                  </div>
+                  <input type="hidden" name="_subject" value="Submission from portfolio">
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            </form>
+          </div>
+        
         </div>
       </div>
       <div class="col-md-6">
