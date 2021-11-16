@@ -3,7 +3,7 @@ html{
 }
 body{
   margin-top: 60px;
-  background-image: url("assets/bridge.jpg");
+  background-image: url("assets/darkbg.jpg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
