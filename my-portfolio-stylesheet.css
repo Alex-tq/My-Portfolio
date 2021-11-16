@@ -52,6 +52,10 @@ body{
   justify-content:center;
   align-items:center;
 }
+#project-section span{
+  color: rgb(152, 250, 152);
+  font-weight: 700;
+}
 h1, h2, h4{
   font-family: georgia;
   color: white !important;
@@ -119,19 +123,20 @@ nav a:hover{
   text-align: center;
 }
 .project-tile{
-
   display: flex;
   width: 100%;
   max-width: 1000px;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 5px;
-  border-radius: 35;
+  border-radius: 25px;
   align-items: center;
+
 }
 .thumbnail  {
   width: 30%;
   background-color:  clear;
   margin: 10px;
+  border-radius: 25px;
 }
 .project-info{
   color: white;
