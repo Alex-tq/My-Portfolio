@@ -19,15 +19,18 @@
         $(".navbar-nav li a").click(function(event) {
           $(".navbar-collapse").collapse('hide');
         });
+        //$('#welcome-section').fadeOut(1000)
+        $('#welcome-text').fadeIn(1000)
+
       });
     </script>
     <title>Alexander Tamarez's Portfolio</title>
   </head>
   <body>
     <!--Bootstrap container layout-->
-<div class="container-fluid" id="home">
+<div class="container-fluid navigation" id="home">
   <!--This is my navigation bar at the top of the page-->
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="navbar">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
     <a href="#"class="navbar-brand">Alexander Tamarez</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
       <span class="navbar-toggler-icon"></span>
@@ -54,17 +57,13 @@
   <!--The Jumbotron begins-->
   <div class="jumbotron">
     <div id="welcome-section">
-      <h1 class="text-center">Hello World! <br/>My Name is <B>Alexander Tamarez</b>.</h1>
+      <h1 id="welcome-text" class="text-center">Hello World! <br/>My Name is <B>Alexander Tamarez</b>.</h1>
     </div>
       <!--The About Me section begins--> 
     <div class="container-fluid about" id="about">
-    <h2 class="text-center">About me</h2>
-    <div id="about-row" class="row">
-      <div id="about-pcontainer"  class="col-md-12">
-        <p> I'm based in New York and currently looking for role as a front end developer. Developing software became my passion back in 2013 when taking an HTML & CSS class made me change my major and since then I earned my degree in computer science and developing became my hobby.</p>      
-      </div>
-      
-    </div>
+      <h2 class="text-center">About me</h2>
+      <p>My name is Alexander Tamarez and I’m a software developer based in New York. My whole life I thought I wanted to be a civil architect because it involves creating things and problem solving which are two things I’ve enjoyed doing for as long as I can remember. But back in 2013 I took an introduction to web development class by mistake and after realizing that there were so many things I could create with code and all the interesting challenges that come with programming, I changed my major to computer science and never looked back. <br /><br/>After graduating I started to teach myself web development and now I’m  looking for a role as Front End Developer where I can help in the company’s growth and improve my skills as a professional web developer.
+</p>
     </div>
     <!--The About Me section ends-->
     <!--The project section begins--> 
@@ -218,7 +217,7 @@
             </li>
 
             <li class="lilogos">
-              <img src="assets/JQuery_Logo.png" alt="JQuery" style="width:70px; height: 70px;" title="Jquery"/>
+              <img src="assets/jqueryLogo.png" alt="JQuery" style="width:70px; height: 70px;" title="Jquery"/>
             </li>
 
             <li class="lilogos">
@@ -253,7 +252,7 @@
               <div class="form-group">
                 <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
               </div>
-              <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+              <button type="submit" class="btn btn-lg btn-block">Submit Form</button>
             </form>
           </div>
         

@@ -1,3 +1,9 @@
+:root {
+  --main-theme-color: rgb(32, 32, 32);
+  --main-text-color: white;
+
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -7,12 +13,18 @@ body{
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: calc(14px + 0.5vw); 
 }
 #welcome-section{
   height: 100vh;
   display:flex;
   align-items: center;
   justify-content:center;
+  background: radial-gradient(rgb(52, 52, 52), rgba(0,0,0,0.1));
+}
+#welcome-text{
+  display: none;
+
 }
 #about{
   display:flex;
@@ -20,56 +32,38 @@ body{
   justify-content:center;
   align-items:center;
   min-height:100vh;
+  padding-top: 80px;
+
+  text-align:center;
+  background: radial-gradient(rgb(52, 52, 52), rgba(0,0,0,0.1));
   
 }
 #about p{
   max-width:500px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  padding: 10px;
   line-height: 2rem;
 }
 
-#about-row{
-  text-align:center;
-  max-width:650px;
-}
-#about-row li{
-  text-align:left;
-}
-
-#about-pcontainer{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-}
 #project-section{
   min-height:80vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
+  padding-top: 80px;
 }
-#project-section span{
-  color: rgb(152, 250, 152);
+span{
+  color: rgb(33, 220, 245);
   font-weight: 700;
 }
-h1, h2, h4{
-  font-family: georgia;
-  color: white !important;
-  text-align: center;
+h1, h2, h4, p{
+  font-family: georgia, serif, 'Courier New', Courier, monospace;
+  color: var(--main-text-color);
+  text-align: center; 
 }
-
-p{
-  color: white;
-  font-family: comic sans ms;
-}
-
 .repo-link {
-  color:white !important;
-  background-color:black !important;
+  color:white;
+  background-color:black;
 }
 
 .repo-link:hover{
@@ -88,25 +82,36 @@ p{
   margin-right: 10px;
   margin-top: 10px;
 }
+nav{
+  background-color: var(--main-theme-color);
+}
+nav a{
+  box-sizing: border-box;
+  border-bottom: 5px solid var(--main-theme-color);
+}
 nav a:hover{
-  background-color: rgba(6, 14, 83, 0.6) !important;
+  border-bottom: 5px solid rgb(33, 220, 245) !important;
+
 }
 
 .jumbotron{
-  background-color: rgba(6, 14, 83, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   padding: 2rem 2px;
+  margin-bottom: 0;
 }
-.about li{
-  font-family: comic sans ms;
-  color: white;
-}
+
 .projects, .Skills, .contact, .about{
   background-color: clear;
-  padding-top: 55px;
+  padding-top: 70px;
   margin-left: 5px;
   margin-right: 5px;
   min-height: 100vh;
+  background: radial-gradient(rgb(52, 52, 52), rgba(0,0,0,0.1));
+}
+#skills{
+  background-color: var(--main-theme-color);
+  background: radial-gradient(rgb(52, 52, 52), rgba(0,0,0,0.1));
 }
 .Skills, .contact {
   display: flex;
@@ -114,36 +119,45 @@ nav a:hover{
   align-items: center;
   justify-content: center;
 }
-
+button{
+  background-color: var(--main-theme-color);
+  color: var(--main-text-color);
+}
+button:hover{
+  background-color: rgb(42, 42, 42);
+}
 .footer {
+  position: absolute;
   right: 0;
   margin-bottom:0px;
   left: 0;
-  background-color: #efefef;
+  height: 30px;
+  background-color: var(--main-theme-color);
+  color:var(--main-text-color);
   text-align: center;
 }
 .project-tile{
   display: flex;
   width: 100%;
   max-width: 1000px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--main-theme-color);
   margin: 5px;
   border-radius: 25px;
   align-items: center;
-
+  
 }
 .thumbnail  {
   width: 30%;
   background-color:  clear;
   margin: 10px;
   border-radius: 25px;
+  
 }
+
 .project-info{
-  color: white;
+  color: var(--main-text-color);
   margin: 10px;
   width: 70%;
-  font-size: calc(12px + 0.5vw);
-  
 }
 
 .projects img:hover {
@@ -159,8 +173,11 @@ nav a:hover{
   border: 1px solid #ddd;
   border-radius: 4px; 
 }
-.thumbnail:hover img {
+.thumbnail img:hover {
   transform: scale(1.03);
+}
+.container-fluid{
+  padding: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -180,9 +197,4 @@ nav a:hover{
   .navbar-brand{
     font-weight:bold;
   }
-  .container-fluid{
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
 }
