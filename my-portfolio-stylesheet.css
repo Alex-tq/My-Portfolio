@@ -56,7 +56,8 @@ body{
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  padding-top: 80px;
+  padding: 80px 5px 5px 0;
+  max-width: 1300px;
 }
 span{
   color: rgb(33, 220, 245);
