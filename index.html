@@ -1,307 +1,595 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
     <!--Font-Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!--Bootstrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
     <!--My own css-->
-    <link rel="stylesheet" type="text/css" href="my-portfolio-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="my-portfolio-stylesheet.css" />
     <!--To collapse the navbar when a link is clicked-->
     <script>
       $(document).ready(function () {
-        $(".navbar-nav li a").click(function(event) {
-          $(".navbar-collapse").collapse('hide');
+        $(".navbar-nav li a").click(function (event) {
+          $(".navbar-collapse").collapse("hide");
         });
         //$('#welcome-section').fadeOut(1000)
-        $('#welcome-text').fadeIn(1000)
-
+        $("#welcome-text").fadeIn(1000);
       });
     </script>
     <title>Alexander Tamarez's Portfolio</title>
   </head>
   <body>
     <!--Bootstrap container layout-->
-<div class="container-fluid navigation" id="home">
-  <!--This is my navigation bar at the top of the page-->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
-    <a href="#"class="navbar-brand">Alexander Tamarez</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <nav class="collapse navbar-collapse" id="navigation">
-      <ul class="navbar-nav text-center">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>   
-      </ul>
-    </nav>  
-  </nav>
-  <!--End of the navigation bar-->
+    <div class="container-fluid navigation" id="home">
+      <!--This is my navigation bar at the top of the page-->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
+        <a href="#" class="navbar-brand">Alexander Tamarez</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+      <!--End of the navigation bar-->
 
-  <!--The Jumbotron begins-->
-  <div class="jumbotron">
-    <div id="welcome-section">
-      <h1 id="welcome-text" class="text-center">Hello World! <br/>My Name is <B>Alexander Tamarez</b>.</h1>
-    </div>
-      <!--The About Me section begins--> 
-    <div class="container-fluid about" id="about">
-      <h2 class="text-center">About me</h2>
-      <p>My name is Alexander Tamarez and I’m a software developer based in New York. My whole life I thought I wanted to be a civil architect because it involves creating things and problem solving which are two things I’ve enjoyed doing for as long as I can remember. But back in 2013 I took an introduction to web development class by mistake and after realizing that there were so many things I could create with code and all the interesting challenges that come with programming, I changed my major to computer science and never looked back. <br /><br/>After graduating I started to teach myself web development and now I’m  looking for a role as Front End Developer where I can help in the company’s growth and improve my skills as a professional web developer.
-</p>
-    </div>
-    <!--The About Me section ends-->
-    <!--The project section begins--> 
-    <div class="projects" id="projects">
-      <h2 class="text-center">Projects</h2>
-      <div class="container-fluid" id="project-section">
-        
-        <div class=" project-tile">
-          <div class="thumbnail">
-            <a target="_blank" href="https://restaurant-reviews-kdlea.mongodbstitch.com/"><img class="img-responsive" src="assets/restaurant-reviews2.png" alt='Restaurant Reviews Card'/></a>
-            <h4>
-              <a href='https://github.com/Alex-tq/restaurant-reviews' target="_blank">
-                <i class="fa fa-github repo-link"></i>
-              </a>Restaurant Reviews
-            </h4>
-          </div>
-          <div class="project-info">
-            <ul>
-              <li>A website where you an lookup restaurants by name, zipcode or cuisine, See the restaurants address and open it on google maps or add, edit and delete reviews.</li>
-              <li>Built using <span>HTML</span>, <span>CSS</span>, <span>Javascript</span>, <span>ReactJS</span>, <span>MongoDB</span> and <span>MongoDB Realm</span> to host and provide a serverless backend.</li>
-            </ul>
+      <!--The Jumbotron begins-->
+      <div class="jumbotron">
+        <div id="welcome-section">
+          <h1 id="welcome-text" class="text-center">
+            Hello World! <br />My Name is <b>Alexander Tamarez</b>.
+          </h1>
+        </div>
+        <!--The About Me section begins-->
+        <div class="container-fluid about" id="about">
+          <h2 class="text-center">About me</h2>
+          <p>
+            My name is Alexander Tamarez and I’m a software developer based in
+            New York. My whole life I thought I wanted to be a civil architect
+            because it involves creating things and problem solving which are
+            two things I’ve enjoyed doing for as long as I can remember. But
+            back in 2013 I took an introduction to web development class by
+            mistake and after realizing that there were so many things I could
+            create with code and all the interesting challenges that come with
+            programming, I changed my major to computer science and never looked
+            back. <br /><br />After graduating I started to teach myself web
+            development and now I’m looking for a role as Front End Developer
+            where I can help in the company’s growth and improve my skills as a
+            professional web developer.
+          </p>
+        </div>
+        <!--The About Me section ends-->
+        <!--The project section begins-->
+        <div class="projects" id="projects">
+          <h2 class="text-center">Projects</h2>
+          <div class="container-fluid" id="project-section">
+            <div class="project-tile">
+              <div class="thumbnail">
+                <a
+                  target="_blank"
+                  href="https://instagram-clone-3e26f.firebaseapp.com/"
+                  ><img
+                    class="img-responsive"
+                    src="assets/instaclone-mobile.png"
+                    alt="Instagram Clone Card"
+                /></a>
+                <h4>
+                  <a
+                    href="https://github.com/Alex-tq/instagram-clone"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github repo-link"></i> </a
+                  >Instagram Clone
+                </h4>
+              </div>
+              <div class="project-info">
+                <ul>
+                  <li>
+                    Instagram clone with Authentication, commenting
+                    functionality and posting functionality.
+                  </li>
+                  <li>
+                    Built Frontend with <span>ReactJS</span>,
+                    <span>Javascript</span>, <span>MUI</span>, <span>CSS</span>,
+                    Backend with <span>NodeJS</span>, <span>Express</span>,
+                    <span>MongoDB</span> and Authentication with
+                    <span>Passport.js</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-tile">
+              <div class="thumbnail">
+                <a
+                  target="_blank"
+                  href="https://restaurant-reviews-kdlea.mongodbstitch.com/"
+                  ><img
+                    class="img-responsive"
+                    src="assets/restaurant-reviews2.png"
+                    alt="Restaurant Reviews Card"
+                /></a>
+                <h4>
+                  <a
+                    href="https://github.com/Alex-tq/restaurant-reviews"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github repo-link"></i> </a
+                  >Restaurant Reviews
+                </h4>
+              </div>
+              <div class="project-info">
+                <ul>
+                  <li>
+                    A website where you an lookup restaurants by name, zipcode
+                    or cuisine, See the restaurants address and open it on
+                    google maps or add, edit and delete reviews.
+                  </li>
+                  <li>
+                    Built using <span>HTML</span>, <span>CSS</span>,
+                    <span>Javascript</span>, <span>ReactJS</span>,
+                    <span>MongoDB</span> and <span>MongoDB Realm</span> to host
+                    and provide a serverless backend.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-tile">
+              <div class="thumbnail">
+                <a target="_blank" href="https://alex-tq.github.io/pic-some"
+                  ><img
+                    class="img-responsive"
+                    src="assets/picsome.png"
+                    alt="pic-some Card"
+                /></a>
+                <h4>
+                  <a href="https://github.com/Alex-tq/pic-some" target="_blank">
+                    <i class="fa fa-github repo-link"></i>
+                  </a>
+                  Pic-Some
+                </h4>
+              </div>
+              <div class="project-info">
+                <ul>
+                  <li>
+                    A mock e-commerce site where you could pick from a group of
+                    images, add them to a shopping cart, have the ability to
+                    edit the cart and check out.
+                  </li>
+                  <li>
+                    Built using <span>HTML</span>, <span>CSS</span>,
+                    <span>Javascript</span> and <span>ReactJS</span>.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-tile">
+              <div class="thumbnail">
+                <a
+                  target="_blank"
+                  href="https://alex-tq.github.io/javascript-calculator/"
+                  ><img
+                    class="img-responsive"
+                    src="assets/js_calculator.png"
+                    alt="Javascript Calculator Card"
+                /></a>
+                <h4>
+                  <a
+                    href="https://github.com/Alex-tq/javascript-calculator"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github repo-link"></i>
+                  </a>
+                  Javascript Calculator
+                </h4>
+              </div>
+              <div class="project-info">
+                <ul>
+                  <li>
+                    A javascript Calculator that lets you add, substract,
+                    multiply and divide while controlling the imput to avoid a
+                    wrong format.
+                  </li>
+                  <li>
+                    Built using <span>HTML</span>, <span>SASS</span>,
+                    <span>Javascript</span> and <span>ReactJS</span>.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-tile">
+              <div class="thumbnail">
+                <a
+                  target="_blank"
+                  href="https://alex-tq.github.io/random-quote-generator/"
+                  ><img
+                    class="img-responsive"
+                    src="assets/random_quote_generator.png"
+                    alt="Random Quote Generator Card"
+                /></a>
+                <h4>
+                  <a
+                    href="https://github.com/Alex-tq/random-quote-generator"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github repo-link"></i>
+                  </a>
+                  Random Quote Generator
+                </h4>
+              </div>
+              <div class="project-info">
+                <ul>
+                  <li>
+                    A Quoate generator that connects to a quotes API to get the
+                    quotes and to the Twitter API to tweet the quote with the
+                    click of one button
+                  </li>
+                  <li>
+                    Built using <span>HTML</span>, <span>SASS</span>,
+                    <span>Javascript</span>, the <span>fetch API</span> and
+                    <span>ReactJS</span>.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-tile">
+              <div class="thumbnail">
+                <a
+                  target="_blank"
+                  href="https://alex-tq.github.io/markdown-previewer/"
+                >
+                  <img
+                    src="assets/markdown_previewer.png"
+                    class="img-responsive"
+                    alt="Markdown Previewer Card"
+                  />
+                </a>
+                <h4>
+                  <a
+                    href="https://github.com/Alex-tq/markdown-previewer"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github repo-link"></i>
+                  </a>
+                  Markdown Previewer
+                </h4>
+              </div>
+              <div class="project-info">
+                <ul>
+                  <li>
+                    A Markdown Previewer that parses Github flavored markdown
+                    into html and renders it.
+                  </li>
+                  <li>
+                    Built using <span>HTML</span>, <span>SASS</span>,
+                    <span>Javascript</span>, <span>Marked.js</span> and
+                    <span>ReactJS</span>.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-tile">
+              <div class="thumbnail">
+                <a
+                  target="_blank"
+                  href="https://alex-tq.github.io/pomodoro-clock/"
+                >
+                  <img
+                    src="assets/pomodoro.png"
+                    class="img-responsive"
+                    alt="Pomodoro Clock Card"
+                  />
+                </a>
+                <h4>
+                  <a
+                    href="https://github.com/Alex-tq/pomodoro-clock"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github repo-link"></i>
+                  </a>
+                  Pomodoro Clock
+                </h4>
+              </div>
+              <div class="project-info">
+                <ul>
+                  <li>
+                    A Pomodoro clock that lets you set section lenth and break
+                    length and beeps everytime a section or a break is over.
+                  </li>
+                  <li>
+                    Built using <span>HTML</span>, <span>CSS</span>,
+                    <span>Javascript</span>, and <span>ReactJS</span>.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-tile">
+              <div class="thumbnail">
+                <a
+                  target="_blank"
+                  href="https://alex-tq.github.io/drum-machine/"
+                >
+                  <img
+                    src="assets/drum_machine.png"
+                    class="img-responsive"
+                    alt="Drum Machine Card"
+                  />
+                </a>
+                <h4>
+                  <a
+                    href="https://github.com/Alex-tq/drum-machine"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github repo-link"></i>
+                  </a>
+                  Drum Machine
+                </h4>
+              </div>
+              <div class="project-info">
+                <ul>
+                  <li>
+                    A Simple drum machine that listens for keyboard events or
+                    clicks to play different sounds.
+                  </li>
+                  <li>
+                    Built using <span>HTML</span>, <span>SASS</span>,
+                    <span>Javascript</span> and <span>ReactJS</span>.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+        <!--The project section ends-->
+        <!--The Skills section begins-->
+        <div class="Skills" id="skills">
+          <h2 class="text-center">Skills</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <div>
+                <ul class="ullogos">
+                  <li class="lilogos">
+                    <img
+                      src="assets/htlm_logo.png"
+                      alt="HTML LOGO"
+                      title="HTML"
+                      style="width: 70px; height: 70px"
+                    />
+                  </li>
+                  <li class="lilogos">
+                    <img
+                      src="assets/CSS3_logo.png"
+                      alt="CSS LOGO"
+                      title="CSS"
+                      style="width: 70px; height: 70px"
+                    />
+                  </li>
+                  <li class="lilogos">
+                    <img
+                      src="assets/JS_logo.png"
+                      alt="JavaScript Logo"
+                      title="JavaScript"
+                      style="width: 70px; height: 70px"
+                    />
+                  </li>
 
-        <div class=" project-tile">
-          <div class="thumbnail">
-            <a target="_blank" href="https://alex-tq.github.io/pic-some"><img class="img-responsive" src="assets/picsome.png" alt='pic-some Card'/></a>
-            <h4>
-              <a href='https://github.com/Alex-tq/pic-some' target="_blank">
-                <i class="fa fa-github repo-link"></i>
-              </a> Pic-Some
-            </h4>
-          </div>
-          <div class="project-info">
-            <ul>
-              <li>A mock e-commerce site where you could pick from a group of images, add them to a shopping
-                  cart, have the ability to edit the cart and check out.</li>
-              <li>Built using <span>HTML</span>, <span>CSS</span>, <span>Javascript</span> and <span>ReactJS</span>.</li>
-            </ul>
+                  <li class="lilogos">
+                    <img
+                      src="assets/React_Logo.png"
+                      alt="React.js Logo"
+                      title="React.js"
+                      style="width: 70px; height: 70px"
+                    />
+                  </li>
+
+                  <li class="lilogos">
+                    <img
+                      src="assets/nextjs_Logo.svg"
+                      alt="Next JS LOGO"
+                      title="Next JS"
+                      style="width: 70px; height: 70px"
+                    />
+                  </li>
+
+                  <li class="lilogos">
+                    <img
+                      src="assets/Redux_Logo.png"
+                      alt="Redux Logo"
+                      title="Redux"
+                      style="width: 70px; height: 70px"
+                    />
+                  </li>
+
+                  <li class="lilogos">
+                    <img
+                      src="assets/Jest_logo.jpg"
+                      alt="Jest Logo"
+                      title="Jest"
+                      style="width: 70px; height: 70px"
+                    />
+                  </li>
+
+                  <li class="lilogos">
+                    <img
+                      src="assets/Sass_Logo.png"
+                      alt="Sass Logo"
+                      title="Sass"
+                      style="width: 70px; height: 70px"
+                    />
+                  </li>
+
+                  <li class="lilogos">
+                    <img
+                      src="assets/bootstrap_Logo.svg"
+                      style="width: 70px; height: 70px"
+                      alt="Bootstrap logo"
+                      title="Bootstrap"
+                    />
+                  </li>
+
+                  <li class="lilogos">
+                    <img
+                      src="assets/jqueryLogo.png"
+                      alt="JQuery"
+                      style="width: 70px; height: 70px"
+                      title="Jquery"
+                    />
+                  </li>
+
+                  <li class="lilogos">
+                    <img
+                      src="assets/jlogo.png"
+                      alt="Java Logo"
+                      style="width: 70px; height: 70px"
+                      title="Java"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class=" project-tile">
-          <div class="thumbnail">
-            <a target="_blank" href="https://alex-tq.github.io/javascript-calculator/"><img class="img-responsive" src="assets/js_calculator.png" alt='Javascript Calculator Card'/></a>
-            <h4>
-              <a href='https://github.com/Alex-tq/javascript-calculator' target="_blank">
-                <i class="fa fa-github repo-link"></i>
-              </a> Javascript Calculator
-            </h4>
-          </div>
-          <div class="project-info">
-            <ul>
-              <li>A javascript Calculator that lets you add, substract, multiply and divide while controlling the imput to avoid a wrong format.</li>
-              <li>Built using <span>HTML</span>, <span>SASS</span>, <span>Javascript</span> and <span>ReactJS</span>.</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class=" project-tile">
-          <div class="thumbnail">
-            <a target="_blank" href="https://alex-tq.github.io/random-quote-generator/"><img class="img-responsive" src="assets/random_quote_generator.png" alt='Random Quote Generator Card'/></a>
-            <h4>
-              <a href='https://github.com/Alex-tq/random-quote-generator' target="_blank">
-                <i class="fa fa-github repo-link"></i>
-              </a> Random Quote Generator
-            </h4>
-          </div>
-          <div class="project-info">
-            <ul>
-              <li>A Quoate generator that connects to a quotes API to get the quotes and to the Twitter API to tweet the quote with the click of one button</li>
-              <li>Built using <span>HTML</span>, <span>SASS</span>, <span>Javascript</span>, the <span>fetch API</span> and <span>ReactJS</span>.</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class=" project-tile">
-          <div class="thumbnail">
-            <a target="_blank" href="https://alex-tq.github.io/markdown-previewer/">
-              <img src="assets/markdown_previewer.png" class="img-responsive" alt="Markdown Previewer Card"/>
-            </a>
-            <h4>
-              <a href='https://github.com/Alex-tq/markdown-previewer' target="_blank">
-                <i class="fa fa-github repo-link"></i>
-              </a> Markdown Previewer
-            </h4>
-          </div>
-          <div class="project-info">
-            <ul>
-              <li>A Markdown Previewer that parses Github flavored markdown into html and renders it.</li>
-              <li>Built using <span>HTML</span>, <span>SASS</span>, <span>Javascript</span>, <span>Marked.js</span> and <span>ReactJS</span>.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class=" project-tile">
-          <div class="thumbnail">
-            <a target="_blank" href="https://alex-tq.github.io/pomodoro-clock/">
-              <img src="assets/pomodoro.png" class="img-responsive" alt="Pomodoro Clock Card"/>
-            </a>
-            <h4>
-              <a href='https://github.com/Alex-tq/pomodoro-clock' target="_blank">
-                <i class="fa fa-github repo-link"></i>
-              </a> Pomodoro Clock
-            </h4>
-          </div>
-          <div class="project-info">
-            <ul>
-              <li>A Pomodoro clock that lets you set section lenth and break length and beeps everytime a section or a break is over.</li>
-              <li>Built using <span>HTML</span>, <span>CSS</span>, <span>Javascript</span>, and <span>ReactJS</span>.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class=" project-tile">
-          <div class="thumbnail">
-            <a target="_blank" href="https://alex-tq.github.io/drum-machine/">
-              <img src="assets/drum_machine.png" class="img-responsive" alt="Drum Machine Card"/>
-            </a>
-            <h4>
-              <a href='https://github.com/Alex-tq/drum-machine' target="_blank">
-                <i class="fa fa-github repo-link"></i>
-              </a> Drum Machine
-            </h4>
-          </div>
-          <div class="project-info">
-            <ul>
-              <li>A Simple drum machine that listens for keyboard events or clicks to play different sounds.</li>
-              <li>Built using <span>HTML</span>, <span>SASS</span>, <span>Javascript</span> and <span>ReactJS</span>.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <!--The project section ends-->
-    <!--The Skills section begins-->
-    <div class="Skills" id="skills">
-      <h2 class="text-center">Skills</h2>  
-      <div class="row ">
-      <div class="col-md-12">
-        <div>
-          <ul class="ullogos">
-            <li class="lilogos">
-              <img src="assets/htlm_logo.png" alt="HTML LOGO" title="HTML" style="width:70px; height: 70px;"/>
-            </li>
-            <li class="lilogos">
-              <img src="assets/CSS3_logo.png" alt="CSS LOGO" title="CSS" style="width:70px; height: 70px;"/>
-            </li>
-            <li class="lilogos">
-              <img src="assets/JS_logo.png" alt="JavaScript Logo" title="JavaScript" style="width:70px; height: 70px;"/>
-            </li>
-            
-            <li class="lilogos">
-              <img src="assets/React_Logo.png" alt="React.js Logo" title="React.js" style="width:70px; height: 70px;"/>
-            </li>
-
-            <li class="lilogos">
-              <img src="assets/nextjs_Logo.svg" alt="Next JS LOGO" title="Next JS" style="width:70px; height: 70px;"/>
-            </li>
-            
-            <li class="lilogos">
-              <img src="assets/Redux_Logo.png" alt="Redux Logo" title="Redux" style="width:70px; height: 70px;"/>
-            </li>
-
-            <li class="lilogos">
-              <img src="assets/Jest_logo.jpg" alt="Jest Logo" title="Jest" style="width:70px; height: 70px;"/>
-            </li>
-            
-            <li class="lilogos">
-              <img src="assets/Sass_Logo.png" alt="Sass Logo" title="Sass" style="width:70px; height: 70px;"/>
-            </li>
-            
-            <li class="lilogos">
-              <img src="assets/bootstrap_Logo.svg" style="width:70px; height: 70px;" alt="Bootstrap logo" title="Bootstrap"/>
-            </li>
-
-            <li class="lilogos">
-              <img src="assets/jqueryLogo.png" alt="JQuery" style="width:70px; height: 70px;" title="Jquery"/>
-            </li>
-
-            <li class="lilogos">
-              <img src="assets/jlogo.png" alt="Java Logo"style="width:70px; height: 70px;" title="Java"/>
-            </li> 
-          </ul> 
-        </div>
-      </div>
-    </div>
-    </div>
-    <!--The Skills section ends-->
-    <!--The Contact section begins-->
-    <div class="contact container-fluid" id="contact">
-    <h2 class="text-center">Contact</h2>
-    <div class="row">
-      
-      <div class="col-md-12">
-        <div>
-          <div class="container">
-            <form target="_blank" action="https://formsubmit.co/04bd2804ef949f2505c3b8ac36e634e1" method="POST">
-              <div class="form-group">
-                <div class="form-row">
-                  <div class="col">
-                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                  </div>
-                  <div class="col">
-                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                  </div>
-                  <input type="hidden" name="_subject" value="Submission from portfolio">
+        <!--The Skills section ends-->
+        <!--The Contact section begins-->
+        <div class="contact container-fluid" id="contact">
+          <h2 class="text-center">Contact</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <div>
+                <div class="container">
+                  <form
+                    target="_blank"
+                    action="https://formsubmit.co/04bd2804ef949f2505c3b8ac36e634e1"
+                    method="POST"
+                  >
+                    <div class="form-group">
+                      <div class="form-row">
+                        <div class="col">
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Full Name"
+                            required
+                          />
+                        </div>
+                        <div class="col">
+                          <input
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="Email Address"
+                            required
+                          />
+                        </div>
+                        <input
+                          type="hidden"
+                          name="_subject"
+                          value="Submission from portfolio"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        placeholder="Your Message"
+                        class="form-control"
+                        name="message"
+                        rows="10"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-block">
+                      Submit Form
+                    </button>
+                  </form>
                 </div>
               </div>
-              <div class="form-group">
-                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <div class="col-md-12">
+              <div>
+                <ul class="ullogos">
+                  <li class="lilogos">
+                    <a
+                      href="https://github.com/Alex-tq"
+                      id="profile-link"
+                      target="_blank"
+                      ><i
+                        class="fa fa-github"
+                        style="
+                          font-size: 48px;
+                          color: white;
+                          background-color: black;
+                        "
+                      ></i
+                    ></a>
+                  </li>
+                  <!--<li class="lilogos"><a href="https://codepen.io/Alex_tq/" target="_blank"><i class="fa fa-codepen" style="font-size:48px;color:white;background-color:black"></i></a></li>-->
+                  <li class="lilogos">
+                    <a
+                      href="https://www.linkedin.com/in/alexander-tamarez-346b8b6b"
+                      target="_blank"
+                      ><i
+                        class="fa fa-linkedin"
+                        style="
+                          font-size: 48px;
+                          color: white;
+                          background-color: #0077b5;
+                        "
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
               </div>
-              <button type="submit" class="btn btn-lg btn-block">Submit Form</button>
-            </form>
+            </div>
           </div>
-        
         </div>
+        <!--The Contact section ends-->
       </div>
-      <div class="col-md-12">
-        <div>
-          <ul class="ullogos">
-            <li class="lilogos"><a href="https://github.com/Alex-tq" id="profile-link" target="_blank"><i class="fa fa-github" style="font-size:48px;color:white;background-color:black"></i></a></li>
-            <!--<li class="lilogos"><a href="https://codepen.io/Alex_tq/" target="_blank"><i class="fa fa-codepen" style="font-size:48px;color:white;background-color:black"></i></a></li>-->
-            <li class="lilogos"><a href="https://www.linkedin.com/in/alexander-tamarez-346b8b6b" target="_blank"><i class="fa fa-linkedin" style="font-size:48px;color:white; background-color:#0077b5"></i></a></li>
-          </ul>    
-        </div>
-      </div>
-    </div>
-    </div>
-    <!--The Contact section ends-->
-  </div>
-  <!--The Jumbotron ends-->
+      <!--The Jumbotron ends-->
 
-  <!--This is a footer-->
-  <div class="footer">By Alexander Tamarez.</div>  
-</div>
-<!--The Container ends here-->
-
+      <!--This is a footer-->
+      <div class="footer">By Alexander Tamarez.</div>
+    </div>
+    <!--The Container ends here-->
   </body>
 </html>
